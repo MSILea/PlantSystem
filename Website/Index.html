@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Lichte blauwe achtergrond */
+        }
+
+        /* Stijl voor de navigatiebalk */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        li {
+            float: left;
+            width: 20%;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Soepele overgang voor achtergrondkleur */
+        }
+
+        li a:hover {
+            background-color: #ddd;
+        }
+
+        /* Stijl voor het 'Home' tabblad */
+        li#home a {
+            background-color: #4682b4; /* Steel Blue kleur voor 'Home' */
+            color: white;
+        }
+
+        /* Pastelkleuren voor de andere tabbladen */
+        li#smartBusiness a {
+            background-color: #ffd700; /* Gouden kleur voor 'Smart Business' */
+        }
+
+        li#smartConnection a {
+            background-color: #add8e6; /* Lichtblauwe kleur voor 'Smart Connection' */
+        }
+
+        li#smartMe a {
+            background-color: #ff69b4; /* Roze kleur voor 'Smart Me' */
+        }
+
+        li#smartTechnology a {
+            background-color: #98fb98; /* Lichtgroene kleur voor 'Smart Technology' */
+        }
+
+        li#smartProject a {
+            background-color: #ff6347; /* Tomatenrode kleur voor 'Smart Project' */
+        }
+
+        /* Verberg alle secties standaard */
+        .tab-content {
+            display: none;
+        }
+
+        /* Ruimte voor de Home-knop */
+        .home-button {
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 'Home'-knop -->
+    <div class="home-button">
+        <a href="#" onclick="showContent('home')">Home</a>
+    </div>
+
+    <!-- Navigatiebalk met tabbladen -->
+    <ul>
+        <li id="smartBusiness"><a href="#" onclick="showContent('smartBusiness')">Smart Business</a></li>
+        <li id="smartConnection"><a href="#" onclick="showContent('smartConnection')">Smart Connection</a></li>
+        <li id="smartMe"><a href="#" onclick="showContent('smartMe')">Smart Me</a></li>
+        <li id="smartTechnology"><a href="#" onclick="showContent('smartTechnology')">Smart Technology</a></li>
+        <li id="smartProject"><a href="#" onclick="showContent('smartProject')">Smart Project</a></li>
+    </ul>
+
+    <!-- Content van de huidige pagina -->
+    <section id="home" class="tab-content">
+        <h1>Welcome to My Portfolio</h1>
+        <!-- Voeg hier algemene inhoud toe -->
+    </section>
+
+    <section id="smartBusiness" class="tab-content">
+        <h1>Welcome to Smart Business</h1>
+        <!-- Hier komt de inhoud van de 'Smart Business' pagina -->
+    </section>
+
+    <section id="smartConnection" class="tab-content">
+        <h1>Smart Connection</h1>
+        <!-- Hier komt de inhoud van de 'Smart Connection' pagina -->
+    </section>
+
+    <section id="smartMe" class="tab-content">
+        <h1>Smart Me</h1>
+        <!-- Hier komt de inhoud van de 'Smart Me' pagina -->
+    </section>
+
+    <section id="smartTechnology" class="tab-content">
+        <h1>Smart Technology</h1>
+        <!-- Hier komt de inhoud van de 'Smart Technology' pagina -->
+    </section>
+
+    <section id="smartProject" class="tab-content">
+        <h1>Smart Project</h1>
+        <!-- Hier komt de inhoud van de 'Smart Project' pagina -->
+    </section>
+
+    <script>
+        function showContent(tabId) {
+            // Verberg alle secties
+            var contents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+
+            // Toon de geselecteerde sectie
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
