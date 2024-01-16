@@ -55,8 +55,26 @@
             display: none;
         }
 
-        .smart-technology {
+        .tab-content.active {
             display: block;
+        }
+
+         /* Clearfix-stijl om te voorkomen dat tekst naast de floated afbeeldingen blijft */
+         .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Stel de hoogte van de afbeeldingen in */
+        .image-container img {
+            height: 200px; /* Pas dit aan naar de gewenste hoogte */
+            width: auto;
+            max-width: 100%;
+            float: left;
+            padding: 4px;
+            border: 1px solid grey;
+            margin: 4px;
         }
     </style>
 </head>
@@ -76,59 +94,137 @@
     </nav>
 
     <div class="content">
-        <div id="home" class="tab-content">
-            <h2>Welkom op mijn portfolio</h2>
-            <p>Hier de algemene informatie over mij en mijn projecten.</p>
+        <div id="home" class="tab-content active">
+            <h2>Welkom op mijn website!</h2>
+            <p>Ik ben Lea Muller en volg momenteel de minor Smart Industry aan de Han in Nijmegen. Op deze website is te zien wat ik heb geleerd en hoe ik aan mijn competenties heb gewerkt. Door op een tabblad te klikken ga je naar het desbetreffende onderwerp.</p>
+            <p>Veel leesplezier!</p>
         </div>
 
         <div id="smart-business" class="tab-content">
             <h2>Smart Business</h2>
-            <p>Dit is een test voor Smart Business.</p>
+            <p>Smart Business kwam het meest overeen met mijn vakgebied. Toch heb ik hier nog veel kunnen leren.</p>
+            <p></p>Hetgeen wat mij het meest is bijgebleven was het 1 op 1 gesprek met Yvonne, nadat we met een aantal groepjes bij elkaar hadden gezeten om de leerdoelen te bespreken. Ik vond de bespreking in de groep wat minder fijn en dat was te merken. Ik heb hierna nog een heel fijn gesprek gehad met Yvonne, waarin ze me heel gehoord liet voelen en duidelijk maakte dat ook ik er mag zijn, het niet erg is als je nog niet alles weet en/of kan en dat het niet gek is dat je nog niet weet wie en waarom je zo bent op deze leeftijd. Dit was echt een eyeopener voor mij.</p>
+                
+                
+            <p>Bij de managementgame vond ik het super interessant om de belangen en het aandeel van bepaalde afdelingen te zien. Ook heb ik hier goed aan mijn leerdoel kunnen werken door initiatief te nemen en gesprekken aan te gaan met andere afdelingen.</p>
+                
+                
+            <p></p>We hebben bij Smart Business ook veel geleerd wat we mee konden nemen bij het project, zoals het Business Model Canvas, het TOM model en de veranderbereidheid van een organisatie door middel van het dinamo-model.</p>
+
+            <div class="image-container clearfix">
+                <img src="BMC.png" alt="Business Model Canvas">
+            </div>
+
+            <div class="image-container clearfix">
+                <img src="TOM model.png" alt="TOM model">
+            </div>
+
+            <div class="image-container clearfix">
+                <img src="Veranderbereidheid.png" alt="Dinamo-model">
+            </div>
         </div>
 
         <div id="smart-connection" class="tab-content">
             <h2>Smart Connection</h2>
-            <p>Dit is een test voor Smart Connection.</p>
+            <p>Smart Connection ligt helemaal buiten mijn vakgebied. Ik heb uiteindelijk gelukkig deze site kunnen maken. Het heeft veel tijd gekost, maar is daardoor ook heel leerzaam geweest. Ik vond het bezig zijn met de code erg leuk. Dit vooral omdat een kleine aanpassing al te zien is en je dus ook snel het resultaat ziet van je werk. Zo heb je ook snel door wanneer iets niet of juist wel werkt.</p>
+            <p></p>Het gebruik van GitHub ging minder soepel. Ik heb hier een hele dag aangezeten en klasgenoten en kennissen erbij betrokken, maar zonder succes. Uiteindelijk toch maar samen met Tijn een mailtje gestuurd naar de desbetreffende docent, waardoor het hopelijk nog op tijd wordt opgelost. Een specifiek leermoment hierbij was wel om eerder bij een docent aan te kloppen voor hulp.</p>
         </div>
 
         <div id="smart-me" class="tab-content">
             <h2>Smart Me</h2>
-            <p>Dit is een test voor Smart Me.</p>
+            <p>Eigen leerdoelen:</p>
+            <ul>
+                <li>Ik wil mijn vakgebied verbreden door voor het einde van de minor te weten hoe 3D printen werkt.</li>
+                <li>Ik wil tijdens de minor leren hoe je een pcb ontwikkelt.</li>
+                <li>Meer initiatief nemen, waardoor ik meer betrokken raak en meer leer door actief betrokken te zijn.</li>
+                <li>Loslaten het idee te hebben een rol aan te moeten nemen wat niet aansluit bij mijn persoonlijkheid.</li>
+            </ul>
+            <h2>Competenties</h2>
+            <p>
+                - Je toont veel initiatief en betrokkenheid:
+                <ul>
+                    <li>Ben aanwezig en houd me aan mijn afspraken. Neem initiatief door op bijvoorbeeld Erik af te stappen met vragen. Of het sturen van mailtjes. Zo is een van mijn leerdoelen ook meer initiatief nemen, dus ik ben hier bewust mee bezig geweest.</li>
+                </ul>
+
+                - Je meningen of adviezen zijn gebaseerd op gedegen onderzoek:
+                <ul>
+                    <li>De conclusies van het project zijn pas gevormd na het doen van onderzoek.</li>
+                    <li>Ik ben een persoon die eigenlijk alleen iets wil zeggen als ik zeker weet dat het zo is. Als dit niet het geval is maak ik ook altijd duidelijk dat ik het niet zeker weet. Tijdens het kookcollege kwam ik ook met ideeën voor nagerechten die we konden gaan maken, nadat ik had opgezocht wat we daar allemaal voor nodig zouden hebben en gezorgd had dat het mogelijk was.</li>
+                </ul>
+
+                - Je kiest ambitieuze leerdoelen en verkent disciplines buiten je eigen vakgebied:
+                <ul>
+                    <li>Ik heb 2 van mijn leerdoelen gebaseerd op disciplines buiten mijn eigen vakgebied. Het technische deel is allemaal nieuw voor mij en daarom valt er veel te leren. Ik vond het dan ook super leuk om te zien hoe je een pcb plaatje kan ontwikkelen en een 3D-print kan ontwerpen en printen.</li>
+                    <li>De andere 2 leerdoelen zijn meer gebaseerd op persoonlijkheid. Hier moet ik dus echt actief mee bezig zijn om verandering te zien. Ik moet bewust focussen op bijvoorbeeld meer initiatief nemen, omdat dit niet vanzelf komt bij mij.</li>
+                </ul>
+
+                - Je bent bewust bezig met je persoonlijke groei:
+                <ul>
+                    <li>Ik heb verschillende keuzes bewust gemaakt, om aan mijn leerdoel te kunnen werken. Ik heb op verschillende momenten gezegd dat ik het wel even na ging vragen of zorgde dat het mailtje eruit ging. Als er dan momenten ontstaan waarop ik duidelijk aan mijn leerdoel kan werken zeg ik ook tegen mijn groepje; “ik doe dat wel, dan werk ik aan mijn leerdoel!”. Wanneer ik het niet meteen zelf zeg, helpen mijn groepsgenoten me er ook aan herinneren, wat ik heel fijn vond.</li>
+                    <li>Ook heb ik vragen gesteld als ik iets niet wist of ergens niet uitkwam, zoals bij de lessen voor het maken van de pcb en het programma voor het ontwerpen van het 3D-print bakje, zodat ik mijn kennis kon verbreden. Daarvoor heb ik ook deze minor gekozen.</li>
+                </ul>
+
+                - Je gebruikt feedback en zelfreflectie om te leren:
+                <ul>
+                    <li>Ik vind het belangrijk om bezig te zijn met feedback van anderen, omdat je hier veel van kan leren. Zo heb ik na de feedback over mijn leerdoelen deze bijgesteld en concreter gemaakt, omdat dit uit de feedback naar voren kwam als tip. Ook ben ik me meer gaan focussen op goed gebruik van bronnen, wat ook uit de feedback naar voren kwam. Ik maak gedurende het project ook meerdere keren gebruik van zelfreflectie. Ik kijk waar ik sta en wat ik aan mijn leerdoelen heb gedaan en wat ik nog kan doen om het te verbeteren.</li>
+                </ul>
+
+                - Je helpt actief anderen groeien:
+                <ul>
+                    <li>Hier heb ik niet heel veel aan gewerkt. Wanneer er iets gevraagd wordt doe ik mijn best om iemand te helpen, maar echt actief anderen helpen groeien zou ik dat niet noemen. Wel heb ik door mijn aandeel van het project bijgedragen aan dat we samen iets moois kunnen neerzetten.</li>
+                    <li>Iik heb het gevoel dat ik meer van anderen leer dan dat ik zelf anderen actief help met groeien. Ik had voor deze minor geen kennis over onder andere programmeren en heb hier dus heel veel vragen over gesteld, zowel aan docenten als aan medeleerlingen, waar ik veel van opsteek.</li>
+                </ul>
+            </p>
         </div>
 
         <div id="smart-technology" class="tab-content">
             <h2>Smart Technology</h2>
-            <p>Ik heb vooral tijdens Smart Technology enorm veel geleerd. Ik had hier nog helemaal geen kennis over. Zo heb ik geleerd hoe een pcb plaatje ontwikkelen werkt en hoe je moet solderen. Ook ben ik naar de Robotica workshop geweest in Delft, waar ik veel relevante kennis heb op gedaan voor ons project bij Oceanz over cobots en robotarmen. Verder heb ik bij Smart Technology ook geleerd om te gaan met Solidworks en heb ik hiermee een bakje ontworpen voor mijn Smart Plant. Ik kom jammer genoeg niet aanwezig zijn bij het printen, omdat ik een afspraak had voor het project. Matilda heeft toen mijn print aangezet. Bij het ophalen zag ik mijn bakje er niet tussen staan. Helaas was er iets niet goed gegaan en sprong het ontwerp van de plaat af. Gelukkig heb ik toen heel lief gebruik mogen maken van Matilda haar design, met een paar aanpassingen. Hierdoor kon ik de dezelfde dag nog het ontwerp aanzetten, waardoor ik niet weer vier uur zou hoeven reizen om het opnieuw te doen. Dit verliep wel allemaal soepel en uiteindelijk heb ik een hele mooie 3D-geprinte bak mogen ontvangen. </p>
+            <p>Ik heb vooral tijdens Smart Technology enorm veel geleerd. Ik had hier nog helemaal geen kennis over. Hierdoor was het vaak ook wel heel stressvol, omdat er veel in een keer op je afkomt tijdens zo’n les. Gelukkig heb ik behulpzame klasgenoten die elke keer weer voor mij klaarstonden als ik een vraag had.</p>
+            <p>Ook heb ik, vooral bij de lessen over de pcb, veel vragen kunnen stellen aan de desbetreffende docent. Hierdoor heb ik bij Smart Technology enorm veel opgestoken.</p>
+
+            <p>Ik heb geleerd hoe een pcb plaatje ontwikkelen werkt en hierbij ook meteen hoe je deze moet solderen.</p>
+            <div class="image-container clearfix">
+                <img src="PCB sch.png" alt="PCB sch">
+            </div>
+
+            <div class="image-container clearfix">
+                <img src="PCB brd.png" alt="PCB brd">
+            </div>
+
+            <div class="image-container clearfix">
+                <img src="Solderen.JPG" alt="Solderen">
+            </div>
+
+            <p>De werkende lichtsencor in actie:</p>
+            <div class="image-container clearfix">
+                <img src="Video werkende lichtsensor.MP4" alt="Werkende lichtsensor">
+            </div>
+
+
+            <p></p>Ook ben ik naar de Robotica workshop geweest in Delft, waar ik veel relevante kennis heb op gedaan voor ons project bij Oceanz over cobots en robotarmen.</p>
+
+            <p></p>Verder heb ik bij Smart Technology ook geleerd om te gaan met Solidworks en heb ik hiermee een bakje ontworpen voor mijn Smart Plant. Ik kon jammer genoeg niet aanwezig zijn bij het printen, omdat ik een bedrijfsbezoek had voor het project. Matilda heeft toen voor mij mijn print aangezet. Bij het ophalen zag ik mijn bakje er niet tussen staan. Helaas was er iets niet goed gegaan en sprong het ontwerp van de plaat af. Gelukkig heb ik toen heel lief gebruik mogen maken van Matilda haar design, met een paar aanpassingen. Hierdoor kon ik de dezelfde dag nog het ontwerp aanzetten, waardoor ik niet weer vier uur zou hoeven reizen om het opnieuw te doen. Dit verliep deze keer wel allemaal soepel en uiteindelijk heb ik een hele mooie 3D-geprinte bak gekregen.</p> 
+            <div class="image-container clearfix">
+                <img src="3D bakje.png" alt="3D-print bakje">
         </div>
 
         <div id="smart-project" class="tab-content">
             <h2>Smart Project</h2>
-            <p>Dit is een test voor Smart Project.</p>
+            <p>Voor Smart Project heb ik samen met Bram Schonenberg en Tijn Huizenga een project uitgevoerd voor Oceanz in Ede.</p>
+
+            <p> De resultaten van dit project zijn te zien op onze gezamelijke websitepagina.</p>
         </div>
     </div>
 
     <script>
         function showTab(tabName) {
             var tabs = document.getElementsByClassName('tab-content');
-            for (var i = 0; i < tabs.length; i++) {
-                tabs[i].style.display = 'none';
+            for (var i = 0; tabs && i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
             }
-            document.getElementById(tabName).style.display = 'block';
+            document.getElementById(tabName).classList.add('active');
         }
     </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
